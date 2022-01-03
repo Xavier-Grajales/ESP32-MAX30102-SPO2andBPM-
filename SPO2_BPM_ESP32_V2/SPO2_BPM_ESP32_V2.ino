@@ -61,8 +61,8 @@ void setup()
   particleSensor.setPulseAmplitudeRed(0x0A); //Baja el led rojo para indicar que el sensor está funcionando
   particleSensor.setPulseAmplitudeGreen(0); //Apaga el led verde. Posiblemente lo omitiremos
 
-  Serial.println(F("Attach sensor to finger with rubber band. Press any key to start conversion"));
-  while (Serial.available() == 0) ; //wait until user presses a key
+  Serial.println(F("Coloque el sensor en el dedo con una banda elástica. Presione cualquier tecla para iniciar la conversión"));
+  while (Serial.available() == 0) ; //espere hasta que el usuario presione una tecla
   Serial.read();
 /*---------------------------Definimos la parte del Setup necesaria para la medición del SPO2--------------------------------------------*/
   byte ledBrightness = 60; //Opciones: 0=Apagado a 255=50mA
